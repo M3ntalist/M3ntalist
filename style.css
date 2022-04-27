@@ -1,6 +1,6 @@
 body {
   margin: 0px;
- 
+  background-color: grey;
 }
 #navbar {
   position: fixed;
@@ -29,7 +29,7 @@ main {
 }
 #welcome-section {
   text-align: center;
-  background: silver;
+  background: coral;
   height: 100vh;
   border: 0px;
   display: grid;
@@ -37,12 +37,12 @@ main {
 }
 #projects {
   text-align: center;
-  background: skyblue;
+  background: red;
   height: auto; 
 }
 #profile1 {
   text-align: center;
-  background: gold;
+  background: lightgrey;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: normal;
@@ -52,7 +52,7 @@ main {
 }
 #profile {
   text-align: center;
-  background: white;
+  background: lightgrey;
   display: grid;
   grid-template-columns: 1fr;
  justify-items: normal;
@@ -93,7 +93,7 @@ main {
   justify-items: center;
 }
 .project-tile {
-  background: white;
+  background: #BDF516;
   padding: 2em;
 }
 .project-tile a {
@@ -106,23 +106,6 @@ main {
   max-width: 100%;
   height: auto;
 }
-  footer {
-  font-weight: 300;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 2rem;
-  background: var(--main-gray);
-  border-top: 4px solid var(--main-red);
-}
-
-footer > p {
-  margin: 2rem;
-}
-
-footer i {
-  vertical-align: middle;
-}
-
 @media all and (max-width: 800px) {
   #navbar {
     justify-content: space-around;
@@ -147,7 +130,7 @@ footer i {
   }
 .tiles {
     grid-template-columns: 1fr;
-}
+  }
 }
 
 html,
@@ -156,7 +139,6 @@ body {
   height: 100%;
 }
 
-/* don't edit this */
 .jest-lite-report__status--pass {
   background: var(--color-pass);
 }

@@ -1,68 +1,25 @@
-/* =================
-  TESTS, LOOK AT THESE
-  Reading tests will always help you discover your requirements.
-  You can make this window bigger. 
-   ===================
-*/
+let element_list = document.getElementById('list');
+let new_li = document.createElement('li');
+let new_a = document.createElement('a');
+new_a.setAttribute("href", 'https://codepen.io/Letlala/pen/RwKrgLK');
+new_a.innerText = 'Code Your Future';
 
-const {
-  core: { test, expect, run },
-  prettify
-} = window.jestLite;
+new_li.appendChild(new_a);
+let new_li2 = document.createElement('li');
+let new_a2 = document.createElement('a');
+new_a2.setAttribute("href", 'https://www.linkedin.com/in/michael-letlala-3274a236/');
+new_a2.innerText = 'LinkedIn';
 
-/* =================
-  FIND ELEMENTS
-  These are all the elements we will look for.
-   ===================
-*/
-const getHeader = document.querySelectorAll("header"),
-  getH1 = document.querySelectorAll("h1"),
-  getSiteHeader = document.querySelectorAll(".c-site-header"),
-  getAria = document.querySelectorAll('nav[aria-label="Main Site Links."]'),
-  getMain = document.querySelectorAll("main"),
-  getFooter = document.querySelectorAll("footer"),
-  getSiteFooter = document.querySelectorAll(".c-site-footer"),
-  getIFrame = document.querySelectorAll("iframe"),
-  getImage = document.querySelectorAll("img"),
-  getWords = document.body.innerText;
+new_li2.appendChild(new_a2);
 
-/* =================
-   ASSERTIONS 
-   These are the things we check are true about your page.
-   Read and update your HTML to discover the requirements.
-   The tests will run every time you update your code.
-   ===================
-*/
-test("There is at least one header element", () => {
-  expect(getHeader.length).toBeGreaterThanOrEqual(1);
-});
-test("There is at least one h1", () => {
-  expect(getH1.length).toBeGreaterThanOrEqual(1);
-});
-test("There is only one header element with the class c-site-header", () => {
-  expect(getSiteHeader.length).toBe(1);
-});
-test("There is a nav element with an aria-label of Main Site Links.", () => {
-  expect(getAria.length).toBeGreaterThanOrEqual(1);
-});
-test("There is only one main element", () => {
-  expect(getMain.length).toBe(1);
-});
-test("There is at least one footer element", () => {
-  expect(getFooter.length).toBeGreaterThanOrEqual(1);
-});
-test("There is only one footer element with the class c-site-footer", () => {
-  expect(getSiteFooter.length).toBe(1);
-});
-test("There is embedded video", () => {
-  expect(getIFrame.length).toBeGreaterThanOrEqual(1);
-});
-test("There is at least one image", () => {
-  expect(getImage.length).toBeGreaterThanOrEqual(1);
-});
-test("There are at least 500 words on the page", () => {
-  expect(getWords.length).toBeGreaterThanOrEqual(500);
-});
+new_li.appendChild(new_li2);
+let new_li3 = document.createElement('li');
+let new_a3 = document.createElement('a');
+new_a3.setAttribute("href", 'https://www.freecodecamp.org/certification/fcc8e94f329-2699-4818-a3cf-daf3a13580a4/responsive-web-design');
+new_a3.innerText = 'FreeCodeCamp';
 
-const console = document.getElementById("tests");
-prettify.toHTML(run(), console);
+new_li3.appendChild(new_a3);
+
+new_li.appendChild(new_li3);
+
+element_list.appendChild(new_li);
