@@ -23,3 +23,20 @@ new_li3.appendChild(new_a3);
 new_li.appendChild(new_li3);
 
 element_list.appendChild(new_li);
+
+var socials;
+
+
+socials = ['Instagram', 'Facebook', 'Twitter'];
+
+
+document.getElementById('button').addEventListener('click', (event) => {
+  if (!!socials.length) {
+    let element_list = document.getElementById('list');
+    let new_li = document.createElement('li');
+    new_li.innerText = socials.shift();
+
+    element_list.appendChild(new_li);
+  }
+
+});
