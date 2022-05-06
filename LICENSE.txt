@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2022 by Kabelo Letlala (https://codepen.io/LetlalaKabelo/pen/RwLMrEP)
+Copyright (c) 2022 by Kabelo Michael Letlala (https://codepen.io/Kabelo_Letlala/pen/MWQYaBy)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

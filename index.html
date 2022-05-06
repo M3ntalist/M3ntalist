@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> <title>Improved Personal Home Page</title>
-  <link rel="stylesheet" type="text/css" href="./style.css"/> 
-</head>
+<head> <title>Improved Personal Home Page</title></head>
   <nav id="navbar">
-  <a href="#welcome-section">Contact</a>
+  <a href="#respond">Contact</a>
   <a href="#projects">Work</a>
-  <a href="#profile-link">About</a>
+  <a href="#profile1">About</a>
 </nav>
 <header id="main">
  <section id="welcome-section">
     <h1>Mr Kabelo Michael Letlala</h1>
-   <p>A fullstack developer</p>
+   <p><b>A fullstack developer<b></p>
    <p>I'm updating my knowledge on the  FreeCodeCamp website</p>
    </section> </header>  
- <!-- I have added "Build your image carousel below"-->
+ <!-- I have added "Build your image carousel"-->
   <div id="img-div">
   <button id="next"> Next </button>
 <span> image <span id="number"></span>
@@ -27,7 +25,7 @@
  <iframe width="853" height="480" src="https://www.youtube.com/embed/2-VKC8g2u1Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
         </div> </div>
-   <!-- I added List of links iteration below-->
+   <!-- I added List of links iteration -->
   <ul id="list">
 </ul>
 <!--I have added the shipping class work here(30th of April 2022)-->
@@ -35,7 +33,7 @@
   <ul id="list"></ul>
 <button id="button">reveal next socials</button>     
 <section id="projects">
-    <h1>These are some of my projects.</h1>
+    <h2>These are some of my projects.</h2>
     <a href="https://codepen.io/frcodecamp" target="_blank">Show all</a>
 <div class="tiles">
   
@@ -90,10 +88,28 @@ working as an individual contributor earlier in my career. </p></section>
       <a id="profile-link" href="https://www.freecodecamp.org/frcodecamp" target="_blank">FCC</a>
     </div>
   </section>
-  <script src="script.js"></script>
-  
-  <section id="copyright">
-    <h3>&copy; 2022 Kabelo Michael Letlala</h3>
+  <!--Comment Form added below-->
+<div id="respond">
+
+  <h3>Leave a Comment</h3>
+
+  <form action="post_comment.php" method="post" id="commentform">
+
+    <label for="comment_author" class="required">Your name</label><br>
+    <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+<br>
+    <label for="email" class="required">Your email</label><br>
+    <input type="email" name="email" id="email" value="" tabindex="2" required="required"><br>
+
+    <label for="comment" class="required">Your message</label><br>
+    <textarea name="comment" id="comment" rows="10" tabindex="4"  required="required"></textarea><br>
+
+ <br>   <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" /><br>
+    <input name="submit" type="submit" value="Submit comment" />
+</form>
+</div>
+<section id="copyright">
+  <h3>&copy;2022 Kabelo Michael Letlala</h3>
   </section>
 </html>
 
