@@ -68,7 +68,7 @@ url(https://swall.teahub.io/photos/small/3-31459_4k-abstract-wallpaper-data-src-
   max-width: 60%;
   display: flex;
   margin-top: 50px;
-  height: 500vh;
+  height: 100vh;
   float: center;
 }
 #content{
@@ -92,6 +92,7 @@ url(https://swall.teahub.io/photos/small/3-31459_4k-abstract-wallpaper-data-src-
 }
 .project-tile a {
   text-decoration: none;
+  font-color: red;
   font-weight: bold;
   font-size: 0.9em;
 }
